@@ -304,8 +304,8 @@ class NormalizerConfigPass implements ConfigPassInterface
      * in a special way to keep all their configuration and allow overriding and
      * removing of fields.
      *
-     * @param  array  $parentConfig The config of the 'form' view
-     * @param  array  $childConfig  The config of the 'edit' and 'new' views
+     * @param array $parentConfig The config of the 'form' view
+     * @param array $childConfig  The config of the 'edit' and 'new' views
      *
      * @return array
      */
@@ -358,7 +358,7 @@ class NormalizerConfigPass implements ConfigPassInterface
      * by defining fields with a '-' dash at the beginning of its name (e.g.
      * { property: '-name' } to remove the 'name' property).
      *
-     * @param  array  $fieldsConfig
+     * @param array $fieldsConfig
      *
      * @return array
      */
