@@ -23,3 +23,4 @@ easy_admin:
                     validation_groups: ['edit_group']
                 fields:
                     - { property: 'field2', label: 'Edit Label', type: 'edit_type', type_options: { disabled: false } }
+                    - '-field1'

@@ -1,7 +1,3 @@
-# TEST
-# 'new' and 'edit' option override 'form' config recursively
-
-# CONFIGURATION
 easy_admin:
     entities:
         Category:
@@ -17,17 +13,22 @@ easy_admin:
                             required: true
                             disabled: false
                         property: field1
+                    field2:
+                        label: 'Form Label'
+                        type_options:
+                            disabled: true
+                        property: field2
                     field3:
                         label: 'New Label'
                         property: field3
             edit:
                 custom_option: 'form custom value'
                 form_options:
-                    validation_groups: ['edit_group', 'form_group']
+                    validation_groups: ['edit_group']
                 fields:
                     field2:
-                        label: 'Form Label'
-                        type: text
+                        label: 'Edit Label'
+                        type: edit_type
                         type_options:
-                            disabled: true
+                            disabled: false
                         property: field2
